@@ -7,6 +7,7 @@ $('#submit').click(function (){
     let input = $('#the-input');
     inputValue = input.val();
     list.push(inputValue);
+    $('#the-input').val('');
     $('ul').append('<li>' + inputValue + '</li>');
 })
 

@@ -7,3 +7,8 @@ $('#submit').click(function (){
     list.push()
 
 })
+
+// Toggle settings-area when button 
+$("#settings").click(function(){
+    $("#settings-area").toggle();
+  });

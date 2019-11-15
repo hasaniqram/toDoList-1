@@ -14,6 +14,29 @@ $('#submit').click(function (){
 $("#settings").click(function(){
     $("#settings-area").toggle();
   });
+
+  // push name to beginning of headline.
+  $("#nameChange").click( function()
+           {
+             $("#headline").html($("#newName").val()+" To do list!");
+             $("#newName").val("");
+           }
+        );
+
+        //click on blue-button under settings, change backgroun to blue.
+        $("#blue").click( function()
+        {
+          $("body").addClass("blue");
+          $("body").removeClass("red");
+        }
+     );
+//click on red-button under settings, change background to red.
+     $("#red").click( function()
+     {
+       $("body").addClass("red");
+       $("body").removeClass("blue");
+     }
+  );
   
 //show list on page
 function show_listItems(){

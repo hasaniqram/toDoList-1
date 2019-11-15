@@ -1,4 +1,4 @@
-let list = ['go to gym', 'study'];
+let list = ['go to gym', 'study', 'do something'];
 show_listItems();
 
 
@@ -38,6 +38,11 @@ $("#settings").click(function(){
        $("body").removeClass("blue");
      }
   );
+
+// set line-through on click
+$('ul').on('click', 'li', function(){
+    $(this).toggleClass("checked");
+});
   
 //show list on page
 function show_listItems(){

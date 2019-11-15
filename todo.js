@@ -1,3 +1,9 @@
+let list = ['go to gym', 'study'];
+
+
 $('#submit').click(function (){
-    console.log('submit clicked');
+    let input = $('#the-input');
+    inputValue = input.val();
+    list.push()
+
 })

@@ -62,3 +62,6 @@ $('#clear').on('click', function(){
     }
  });
 });
+
+// makes the list sortable
+$('#wholeList').sortable();

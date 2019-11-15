@@ -51,3 +51,14 @@ function show_listItems(){
         $('ul').append('<li>' + value + '</li>');
     }
 }
+
+
+// delete item from list
+$('#clear').on('click', function(){
+  $('#wholeList').children('li').each(function() {
+    if ($(this).hasClass('checked')) {
+        //do stuff
+        $(this).remove();
+    }
+ });
+});
